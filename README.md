@@ -3,7 +3,7 @@
 
 ## Introduction
 
-As a data scientist you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the langage that will allow you to perform common tasks more quickly and easily.
+As a data scientist you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the language that will allow you to perform common tasks more quickly and easily.
 
 ## Objectives
 You will be able to:
@@ -111,7 +111,7 @@ dir(str)
 
 Next, we will talk about some of Python's built in **functions**. Unlike methods, Functions are not bound to any particular object or type of object. They can be called by themselves, however, they typically require an argument. Let's take a look at an example before we get too far into how functions work.
 
-The `print()` function takes in as many arguments as we want. It then returns each arguumet *stringified* or the string form of each argument. It can also be executed without any argument, but we will just not have any return value.
+The `print()` function takes in as many arguments as we want. It then returns each argument *stringified* or the string form of each argument. It can also be executed without any argument, but we will just not have any return value.
 
 
 ```python
@@ -202,7 +202,7 @@ True != False # returns True
 
 
 
-Now onto the third grouping of comaparison operators. The greater than (`>`), less than (`<`), greater than or equal to (`>=`) and less than or equal (`<=`) to operators also only return True or False from an operation. Essentially they are doing the same thing as the operators we see above, but the comparison is slightly different.
+Now onto the third grouping of comparison operators. The greater than (`>`), less than (`<`), greater than or equal to (`>=`) and less than or equal (`<=`) to operators also only return True or False from an operation. Essentially they are doing the same thing as the operators we see above, but the comparison is slightly different.
 
 ```python
 True > True # False
@@ -212,7 +212,7 @@ True >= True # True
 10 < 100 # True
 100 > 101 # False
 ```
-We can even compare strings to see which is alphabetically greater or less than. A string is greater than if it comes after another string alphabetically (or if its ascii value is greater). An important note is that capital letters have lower ascii values, which means that they come earlier in the alphabet than lowercase letters. For example the ascii Alphalbet would look something like: `Aa Bb Cc Dd Ee Ff ... Xx Yy Zz` with `A` having the lowest ascii value and `z` having the highest ascii value.
+We can even compare strings to see which is alphabetically greater or less than. A string is greater than if it comes after another string alphabetically (or if its ascii value is greater). An important note is that capital letters have lower ascii values, which means that they come earlier in the alphabet than lowercase letters. For example the ascii alphabet would look something like: `Aa Bb Cc Dd Ee Ff ... Xx Yy Zz` with `A` having the lowest ascii value and `z` having the highest ascii value.
 
 ```python
 "APPLE" < "apple" # True
@@ -236,7 +236,7 @@ print('6.', ["hi"] == ["hi"]) # True
 print('7.', "Thomas" != "Samantha") # True
 ```
 
-Above we can see examples using both the `!=` and `==` operators to compare elements of several datatypes and values. Remember that these operators are testing for the value of each element.
+Above we can see examples using both the `!=` and `==` operators to compare elements of several data types and values. Remember that these operators are testing for the value of each element.
 
 Next, we will look at examples using the greater than (>), less than (<), greater than or equal to (>=) and less than or equal (<=) to operators.
 
@@ -329,7 +329,7 @@ print(value)
 ```
 
     10
-
+    
 
 
 ```python
@@ -344,6 +344,6 @@ print(new_variable)
 ```
 
 # Summary
-In this lesson, we covered a lot of materials, so don't worry if it seems overwhelming right now. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also increasing the readibility, and efficiency of our code.
+In this lesson, we covered a lot of materials, so don't worry if it seems overwhelming right now. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also increasing the readability, and efficiency of our code.
 
-Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succicnt way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an if statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
+Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an if statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
