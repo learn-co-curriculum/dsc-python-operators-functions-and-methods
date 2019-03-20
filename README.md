@@ -3,7 +3,7 @@
 
 ## Introduction
 
-As a data scientist you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the language that will allow you to perform common tasks more quickly and easily.
+As a data scientist, you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the language that will allow you to perform common tasks more quickly and easily.
 
 ## Objectives
 You will be able to:
@@ -30,7 +30,7 @@ Really understanding objects, functions and methods will probably take a while, 
 * Some of them you use by writing their name first - e.g. `type("hello")` - those are called functions
 * Others require you to take an object and "call a method on the object" e.g. `my_name.capitalize()` - they are methods
 
-Don't worry if it's a bit confusion for now, we'll come back to this repeatedly until it's second nature!
+Don't worry if it's a bit confusing for now, we'll come back to this repeatedly until it's second nature!
 
 
 ## Python Methods
@@ -177,7 +177,7 @@ Comparison operators (or Relational operators) take two elements and compare the
 != # tests inequality between two elements
 <, >, <=, >= # each tests the value between two elements
 ```
-Perhaps the last line's operators are a little more familiar because we've seen these operators in math classes. But the first two might be bit more confusing, so, let's dive into those first.
+Perhaps the last line's operators are a little more familiar because we've seen these operators in math classes. But the first two might be a bit more confusing, so, let's dive into those first.
 
 The double equals operator (`==`) is testing whether the value of the first element is equal to that of the second element (e.g. `element1 == element2`).
 ```python 
@@ -189,7 +189,7 @@ False == False # returns True
 "heLLo" == "heLLo" # returns True
 ```
 
-The bang (exclamation point) equals operator (`!=`) is testing whether the value of first element is **NOT** equal to that of the second element (e.g. `element1 != element2`).
+The bang (exclamation point) equals operator (`!=`) is testing whether the value of the first element is **NOT** equal to that of the second element (e.g. `element1 != element2`).
 
 ```python 
 True != True # returns False
@@ -199,8 +199,6 @@ True != False # returns True
 "hi" != "HI" # returns True
 "heLLo" != "heLLo" # returns False
 ```
-
-
 
 Now onto the third grouping of comparison operators. The greater than (`>`), less than (`<`), greater than or equal to (`>=`) and less than or equal (`<=`) to operators also only return True or False from an operation. Essentially they are doing the same thing as the operators we see above, but the comparison is slightly different.
 
@@ -329,7 +327,7 @@ print(value)
 ```
 
     10
-    
+
 
 
 ```python
@@ -343,7 +341,7 @@ new_variable = x if x > y else y
 print(new_variable)
 ```
 
-# Summary
+## Summary
 In this lesson, we covered a lot of materials, so don't worry if it seems overwhelming right now. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also increasing the readability, and efficiency of our code.
 
 Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an if statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
