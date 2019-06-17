@@ -253,20 +253,20 @@ print('9.', "Terrance" > "Teresa") # True
 
 ### Other Types of Operators - Logical Operators
 
-The next group of operators are logical operators. They compare truthy/falsy values. The operators are:
+The next group of operators are logical operators. They provide a means for creating more complex logical phrases by combining multiple truthy/falsy values. The operators are:
 
 ```python
 and 
-# Evaluates 2 elements x and y; x is evaluated first. If x is falsy, x is returned. If x is not falsy, y is evaluated and the resulting value is returned.
+# Evaluates 2 elements x and y; x is evaluated first. If x is falsy, x is returned. If x is not falsy, y is evaluated and the resulting value is returned. In other words, both have to be True in order for True to be returned. Otherwise, False is returned.
 
 
 
 or 
-# Evaluates 2 elements x and y; x is evaluated first. If x is truthy, its value is returned. If x is not truthy, y is evaluated and the resulting value is returned.
+# Evaluates 2 elements x and y; x is evaluated first. If x is truthy, its value is returned. If x is not truthy, y is evaluated and the resulting value is returned. In other words, if either x or y is True, True is returned. Only if both are flase is False returned.
 
 
 not 
-# returns a boolean value that is the opposite of the truthy/falsy value of the element
+# returns a boolean value that is the opposite of the truthy/falsy value of the element.
 ```
 Let's see these in action:
 
