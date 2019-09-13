@@ -8,7 +8,7 @@ As a data scientist, you will spend a lot of time writing code in Python. In thi
 ## Objectives
 You will be able to:
 * Use base Python methods like `.append()`, `.upper()` and `.capitalize()`
-* Understand (simply) and explain what built in Python methods are
+* Understand (simply) and explain what built-in Python methods are
 * Understand, explain and use some base Python functions like `len()`, `type()`, `sum()`, `max()` and `min()`
 * Understand and explain what functions are and why they’re useful
 * Understand, explain and use Python comparison, logical, and identity operators
@@ -23,10 +23,10 @@ An object is a collection of data and functions. It turns out that for many type
 
 If a function is part of an object we call it a method.
 
-Python has a number of built in functions and various objects in Python have built in methods.
+Python has a number of built-in functions and various objects in Python have built-in methods.
 
 Really understanding objects, functions and methods will probably take a while, and it's something we'll come back to a number of times, but for now, here are the three things you need to know:
-* Python comes with a range of built in pieces of code to perform common tasks
+* Python comes with a range of built-in pieces of code to perform common tasks
 * Some of them you use by writing their name first - e.g. `type("hello")` - those are called functions
 * Others require you to take an object and "call a method on the object" e.g. `my_name.capitalize()` - they are methods
 
@@ -109,7 +109,7 @@ dir(str)
 
 ## Python Functions
 
-Next, we will talk about some of Python's built in **functions**. Unlike methods, Functions are not bound to any particular object or type of object. They can be called by themselves, however, they typically require an argument. Let's take a look at an example before we get too far into how functions work.
+Next, we will talk about some of Python's built-in **functions**. Unlike methods, Functions are not bound to any particular object or type of object. They can be called by themselves, however, they typically require an argument. Let's take a look at an example before we get too far into how functions work.
 
 The `print()` function takes in as many arguments as we want. It then returns each argument *stringified* or the string form of each argument. It can also be executed without any argument, but we will just not have any return value.
 
