@@ -123,7 +123,7 @@ print()
 print(["this", "is", "a", "list"], {"this-is": 'a-dictionary'}, "this is a string and third argument")
 ```
 
-The `type()` function takes in one argument, any piece of data, and it return the **type** of that data. So, if the argument is a dictionary (`{}`), we will get the return value of `dict`.
+The `type()` function takes in one argument, any piece of data, and it returns the **type** of that data. So, if the argument is a dictionary (`{}`), we will get the return value of `dict`.
 
 
 ```python
