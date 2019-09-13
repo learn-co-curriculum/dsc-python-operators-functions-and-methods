@@ -341,6 +341,6 @@ print(new_variable)
 ```
 
 ## Summary
-In this lesson, we covered a lot of materials, so don't worry if it seems overwhelming right now. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also increasing the readability, and efficiency of our code.
+In this lesson, we covered a lot of material, so don't worry if it seems overwhelming right now. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also increasing the readability, and efficiency of our code.
 
 Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an if statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
