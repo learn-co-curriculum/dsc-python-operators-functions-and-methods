@@ -3,29 +3,29 @@
 
 ## Introduction
 
-As a data scientist, you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the language that will allow you to perform common tasks more quickly and easily.
+As a Data Scientist, you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the language that will allow you to perform common tasks more quickly and easily.
 
 ## Objectives
 You will be able to:
-* Use base Python methods like `.append()`, `.upper()` and `.capitalize()`
-* Understand (simply) and explain what built-in Python methods are
-* Understand, explain and use some base Python functions like `len()`, `type()`, `sum()`, `max()` and `min()`
-* Understand and explain what functions are and why they’re useful
-* Understand, explain and use Python comparison, logical, and identity operators
+* Understand and explain what built-in Python methods are 
+* Use some standard Python methods like `.append()`, `.upper()` and `.capitalize()` 
+* Understand and explain what functions are and why they’re useful 
+* Use some standard Python functions like `len()`, `type()`, `sum()`, `max()` and `min()` 
+* Understand, explain, and use Python's comparison, logical, and identity operators 
 
 ## Introducing "Objects"
 
-Later in the course we're going to spend a good amount of time on introducing and giving you hands on practice in "Object Oriented Programming" (OOP). But for now, to understand how some of the features in Python work, we're going to have to provide you with a brief introduction to some basic concepts. 
+Later in the course we're going to spend a good amount of time introducing and giving you hands on practice with "Object Oriented Programming" (OOP). But for now, to understand how some of the features in Python work, we're going to have to provide you with a brief introduction to some basic concepts. 
 
 A function is a piece of reusable code. If you often want to capitalize a word, you might write (or use, if someone else has written) a "function" called `capitalize()` that will take a string and make it all upper case.
 
 An object is a collection of data and functions. It turns out that for many types of programming, putting your functions and data together into "objects" is a really useful way to organize all of your code to make it easy to keep track of.
 
-If a function is part of an object we call it a method.
+If a function is associated to a specific object we call it a method.
 
 Python has a number of built-in functions and various objects in Python have built-in methods.
 
-Really understanding objects, functions and methods will probably take a while, and it's something we'll come back to a number of times, but for now, here are the three things you need to know:
+Really understanding objects, functions, and methods will probably take a while, and it's something we'll come back to a number of times, but for now, here are the three things you need to know:
 * Python comes with a range of built-in pieces of code to perform common tasks
 * Some of them you use by writing their name first - e.g. `type("hello")` - those are called functions
 * Others require you to take an object and "call a method on the object" e.g. `my_name.capitalize()` - they are methods
@@ -37,14 +37,14 @@ Don't worry if it's a bit confusing for now, we'll come back to this repeatedly 
 
 Most higher-level languages like Python have types like strings or lists that actually come built-in with some really great functionality, which we call methods. Methods are, essentially, functions that are attached or **bound to an object**. Now that sentence might not make complete sense, so, let's unpack it. 
 
-We have seen some methods and functions already. For example, we have seen and used the `type()` function and the `.title()` method. The key difference is that the `.title()` method has always been bound to a string. The `type()` function, however, is not called on a string or any data type. 
+We have seen some methods and functions already. For example, we have seen and used the `type()` function and the `.title()` method. The key difference is that the `.title()` method has always been bound to a string. The `type()` function, however, can be used on a string or any other data type. 
 
 ```python
 "hello, i am a string.".title() # "Hello, I Am A String."
 
 type("hello, i am a string.") # str
 ```
-To illustrate even more clearly, try running the next cell. We will find that Python doesn't know what `title()` is when it is not attached to a string. This is because it is a **method** that is **bound** to the string
+To illustrate even more clearly, try running the next cell. We will find that Python doesn't know what `title()` is when it is not attached to a string. This is because it is a **method** that is **bound** to the string. 
 
 
 ```python
@@ -55,9 +55,9 @@ Don't worry too much about the differences between the two. For now, just know t
 
 First, let's look at the `.upper()`, `.lower()`, `.capitalize()` methods, which are all **string methods**, meaning they are only called on strings.
 
-* `.upper()` is used to make all characters in a string uppercased.
-* `.lower()` is used to make all characters in a string lowercased.
-* `.capitalize()` is used to make only the **first** character in a string uppercased.
+* `.upper()` is used to make all characters in a string uppercased 
+* `.lower()` is used to make all characters in a string lowercased 
+* `.capitalize()` is used to make only the **first** character in a string uppercased 
 
 
 ```python
@@ -66,7 +66,7 @@ print("HELLO, IM LOWERCASED".lower())
 print("hello, im capitalized".capitalize())
 ```
 
-Next, let's look at some **list methods**.
+Next, let's look at some **list methods**: 
 
 * `.append([ELEMENT])` is used to add a given element to the end of a list.
 * `.pop()` is used to remove the last element from the list (or if an index is given, it removes the element at that index).
@@ -79,28 +79,36 @@ It is important to note the **return value** from each of these methods is not t
 list_append = [1,2,3,4]
 list_append.append(5)
 print(list_append)
+```
+
+
+```python
 list_pop = [4,5,6,7]
 list_pop.pop()
 print(list_pop)
+```
+
+
+```python
 list_one = [1,2,3]
 list_two = [4,5,6]
 list_one.extend(list_two)
 print(list_one)
 ```
 
-Finally, we'll look at a few **dictionary methods**
+Finally, we'll look at a few **dictionary methods**: 
 
 * `.keys()` is used to return a list-like `dict_keys` object with the name of each key in the dictionary
 * `.values()` is used to return a list-like `dict_values` object with the values in the dictionary
 
 
 ```python
-dictionary = {'name-key': 'example-dict', 'key2': 'value2', 'num_keys': 3}
+dictionary = {'name-key': 'example-dict', 'key_2': 'value_2', 'num_keys': 3}
 print(dictionary.keys())
 print(dictionary.values())
 ```
 
-> **Note:** If we wanted to see all built-in methods for a data type, we can call Python's `dir()` function like we are below. We just need to give the `dir()` function the data type we want to look at (i.e. `str`, `dict`, `list`, `int` etc.)
+> **Note:** If we wanted to see all built-in methods for a data type, we can call Python's `dir()` function as shown below. We just need to give the `dir()` function the data type we want to look at (i.e. `str`, `dict`, `list`, `int` etc.)
 
 
 ```python
@@ -109,7 +117,7 @@ dir(str)
 
 ## Python Functions
 
-Next, we will talk about some of Python's built-in **functions**. Unlike methods, Functions are not bound to any particular object or type of object. They can be called by themselves, however, they typically require an argument. Let's take a look at an example before we get too far into how functions work.
+Next, we will talk about some of Python's built-in **functions**. Unlike methods, functions are not bound to any particular object or type of object. They can be called by themselves, however, they typically require an argument. Let's take a look at an example before we get too far into how functions work.
 
 The `print()` function takes in as many arguments as we want. It then returns each argument *stringified* or the string form of each argument. It can also be executed without any argument, but we will just not have any return value.
 
@@ -147,14 +155,14 @@ len({"this-is": 'a-dictionary', "with-two": "key value pairs"})
 len(["this", "is", 1, "list", "with", 7, "elements"])
 ```
 
-The `sum()`function operates on lists that contain **only numbers** and returns the sum of all the numbers within the list
+The `sum()` function operates on lists that contain **only numbers** and returns the sum of all the numbers within the list. 
 
 
 ```python
 sum([10, 11, 13, 14, 9, 14.5])
 ```
 
-The `max()` and `min()` functions operate on collections that **contain only one data type**, which can be compared using a comparison operator like `<`, which we will explore later. Generally we will be using these functions on lists with either all **numbers** or all **strings**. 
+The `max()` and `min()` functions operate on collections that **contain only one data type**, which can be compared using a comparison operator like `<`, which we will explore later. Generally, we will be using these functions on lists with either all **numbers** or all **strings**. 
 
 
 ```python
@@ -179,7 +187,7 @@ Comparison operators (or Relational operators) take two elements and compare the
 ```
 Perhaps the last line's operators are a little more familiar because we've seen these operators in math classes. But the first two might be a bit more confusing, so, let's dive into those first.
 
-The double equals operator (`==`) is testing whether the value of the first element is equal to that of the second element (e.g. `element1 == element2`).
+The double equals operator (`==`) is testing whether the value of the first element is equal to that of the second element (e.g. `element_1 == element_2`).
 ```python 
 False == True # returns False
 False == False # returns True
@@ -189,7 +197,7 @@ False == False # returns True
 "heLLo" == "heLLo" # returns True
 ```
 
-The bang (exclamation point) equals operator (`!=`) is testing whether the value of the first element is **NOT** equal to that of the second element (e.g. `element1 != element2`).
+The bang (exclamation point) equals operator (`!=`) is testing whether the value of the first element is **NOT** equal to that of the second element (e.g. `element_1 != element_2`).
 
 ```python 
 True != True # returns False
@@ -200,7 +208,7 @@ True != False # returns True
 "heLLo" != "heLLo" # returns False
 ```
 
-Now onto the third grouping of comparison operators. The greater than (`>`), less than (`<`), greater than or equal to (`>=`) and less than or equal (`<=`) to operators also only return True or False from an operation. Essentially they are doing the same thing as the operators we see above, but the comparison is slightly different.
+Now onto the third grouping of comparison operators. The greater than (`>`), less than (`<`), greater than or equal to (`>=`) and less than or equal (`<=`) to operators also only return `True` or `False` as the output. 
 
 ```python
 True > True # False
@@ -257,12 +265,12 @@ The next group of operators are logical operators. They provide a means for crea
 
 ```python
 and 
-# Evaluates 2 elements x and y; x is evaluated first. If x is falsy, x is returned. If x is not falsy, y is evaluated and the resulting value is returned. In other words, both have to be True in order for True to be returned. Otherwise, False is returned.
+# Evaluates 2 elements x and y; x is evaluated first. If x is falsy, x is returned. If x is not falsy, y is evaluated and the resulting value is returned. In other words, both have to be true in order for True to be returned. Otherwise, False is returned.
 
 
 
 or 
-# Evaluates 2 elements x and y; x is evaluated first. If x is truthy, its value is returned. If x is not truthy, y is evaluated and the resulting value is returned. In other words, if either x or y is True, True is returned. Only if both are flase is False returned.
+# Evaluates 2 elements x and y; x is evaluated first. If x is truthy, its value is returned. If x is not truthy, y is evaluated and the resulting value is returned. In other words, if either x or y is True, True is returned. Only if both are false is False returned.
 
 
 not 
@@ -313,7 +321,7 @@ print("7A.", b == c) #
 print("8.", x is not c) #
 ```
 
-As we can see, the `is` and `is not` operators are checking to see if the objects are exactly the same object in memory. However, the `==` and `!=` operators are simply checking to see if the value of each element is the same. This will become clearer as we learn more about how python stores data. 
+As we can see, the `is` and `is not` operators are checking to see if the objects are exactly the same object in memory. However, the `==` and `!=` operators are simply checking to see if the value of each element is the same. This will become clearer as we learn more about how Python stores data. 
 
 All objects are stored in a specific place in memory, we can think of this as an address on the computer, so, all objects will have their own unique address. A **variable**, like `x`, is a **reference** to that object and not the object itself. So, when we use the `is` or `is not` operator, we are checking to see if the address of the object is the same as another object. When we use the `==` or `!=` operators, we are checking to see if they are basically equal in value, irrespective of whether they are the same or two different objects.
 
@@ -341,6 +349,6 @@ print(new_variable)
 ```
 
 ## Summary
-In this lesson, we covered a lot of material, so don't worry if it seems overwhelming right now. First we looked at Objects and then Python built-in methods and functions. These are objects that perform common operations on data. They help us greatly reduce the amount of code we write while also increasing the readability, and efficiency of our code.
+In this lesson, we covered a lot of material, so don't worry if it seems overwhelming right now. First we looked at objects and then built-in methods and functions in Python. They help us greatly reduce the amount of code we write while also increasing the readability and efficiency of our code.
 
-Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an if statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
+Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an `if` statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
