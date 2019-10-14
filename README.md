@@ -7,11 +7,11 @@ As a Data Scientist, you will spend a lot of time writing code in Python. In thi
 
 ## Objectives
 You will be able to:
-* Understand and explain what built-in Python methods are 
-* Use some standard Python methods like `.append()`, `.upper()` and `.capitalize()` 
-* Understand and explain what functions are and why they’re useful 
-* Use some standard Python functions like `len()`, `type()`, `sum()`, `max()` and `min()` 
-* Understand, explain, and use Python's comparison, logical, and identity operators 
+* Use built-in Python functions
+* Describe the difference between a function and a method
+* Use comparison operators to compare objects
+* Use logical operators to incorporate multiple conditions
+* Use identity operators to confirm the identity of an object
 
 ## Introducing "Objects"
 
