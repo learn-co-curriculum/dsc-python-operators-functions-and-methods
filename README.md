@@ -7,7 +7,7 @@ As a Data Scientist, you will spend a lot of time writing code in Python. In thi
 
 ## Objectives
 You will be able to:
-* Use built-in Python functions
+* Use built-in Python functions and methods
 * Describe the difference between a function and a method
 * Use comparison operators to compare objects
 * Use logical operators to incorporate multiple conditions
