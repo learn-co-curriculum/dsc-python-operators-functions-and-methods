@@ -68,11 +68,11 @@ print("hello, im capitalized".capitalize())
 
 Next, let's look at some **list methods**: 
 
-* `.append([ELEMENT])` is used to add a given element to the end of a list.
+* `.append(ELEMENT)` is used to add a given element to the end of a list.
 * `.pop()` is used to remove the last element from the list (or if an index is given, it removes the element at that index).
 * `.extend([SECOND_LIST])` is used to add all elements from a second list to the first list.
 
-It is important to note the **return value** from each of these methods is not the resulting list. These operations **alter** the original list on which we are operating.
+It is important to note the **return value** from each of these methods is not the resulting list. These operations **alter** the original list on which we are operating. 
 
 
 ```python
@@ -162,7 +162,7 @@ The `sum()` function operates on lists that contain **only numbers** and returns
 sum([10, 11, 13, 14, 9, 14.5])
 ```
 
-The `max()` and `min()` functions operate on collections that **contain only one data type**, which can be compared using a comparison operator like `<`, which we will explore later. Generally, we will be using these functions on lists with either all **numbers** or all **strings**. 
+The `max()` and `min()` functions operate on collections that **contain elements of certain compatible data types**, which can be compared using a comparison operator like `<`, which we will explore later. Generally, we will be using these functions on lists with either all **numbers** or all **strings**. 
 
 
 ```python
@@ -218,7 +218,7 @@ True >= True # True
 10 < 100 # True
 100 > 101 # False
 ```
-We can even compare strings to see which is alphabetically greater or less than. A string is greater than if it comes after another string alphabetically (or if its ascii value is greater). An important note is that capital letters have lower ascii values, which means that they come earlier in the alphabet than lowercase letters. For example the ascii alphabet would look something like: `Aa Bb Cc Dd Ee Ff ... Xx Yy Zz` with `A` having the lowest ascii value and `z` having the highest ascii value.
+We can even compare strings to see which is alphabetically greater or less. A string is greater if it comes after another string alphabetically (or if its ASCII value is greater). An important note is that capital letters have lower ASCII values, which means that when you make comparisions, uppercase letters will always be less than lowercase letters. For example, the ASCII alphabet would look something like: `A, B, C ... X, Y, Z ... a, b, c ... x, y, z` with `A` having the lowest ASCII value and `z` having the highest ASCII value.
 
 ```python
 "APPLE" < "apple" # True
@@ -351,4 +351,4 @@ print(new_variable)
 ## Summary
 In this lesson, we covered a lot of material, so don't worry if it seems overwhelming right now. First we looked at objects and then built-in methods and functions in Python. They help us greatly reduce the amount of code we write while also increasing the readability and efficiency of our code.
 
-Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Logical operators compare two elements for their equality, that is whether they are the same object or not, and they return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an `if` statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
+Next we looked at operators in Python. Operators are fundamental tools in many languages that provide a succinct way to compare multiple elements. Comparison operators return boolean values and compare the value between two elements. Logical operators compare the truthiness and falsiness of two elements and either return one of the elements or a boolean value. Identity operators compare two elements for their equality, that is whether they are the same object or not, and return a boolean value. Lastly, ternary operators are used to assign a value to a variable. They use an `if` statement and another operator to compare two values and return one of two values, which is used to assign the value of a variable.
