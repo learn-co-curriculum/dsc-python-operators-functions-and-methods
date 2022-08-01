@@ -1,4 +1,3 @@
-
 # Built-in Python Operators, Functions and Methods
 
 ## Introduction
@@ -6,7 +5,9 @@
 As a Data Scientist, you will spend a lot of time writing code in Python. In this lesson, we're going to introduce some features built right into the language that will allow you to perform common tasks more quickly and easily.
 
 ## Objectives
+
 You will be able to:
+
 * Use built-in Python functions and methods
 * Describe the difference between a function and a method
 * Use comparison operators to compare objects
